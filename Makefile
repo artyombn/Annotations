@@ -1,2 +1,2 @@
 typing:
-	mypy Basic/
+	mypy Basic/ Intermediate/
