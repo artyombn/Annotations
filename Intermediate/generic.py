@@ -7,6 +7,6 @@ from typing import TypeVar
 
 T = TypeVar('T')
 
-def add(a: T, b: T) -> T:
-    ...
+def add(a: T, b: T) -> tuple[T, T]:
+    return a, b
 
