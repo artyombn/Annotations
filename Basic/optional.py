@@ -9,3 +9,15 @@ from typing import Optional
 
 def foo(x: Optional[int] = 0):
     return x
+
+
+"""
+RESULT
+
+
+foo(10)
+foo(None)
+foo()
+
+foo("10")  # expect-type-error
+"""

@@ -9,3 +9,12 @@ from typing import List
 
 def foo(x: List[str]) -> List[str]:
     return x
+
+
+"""
+RESULT
+
+
+foo(["foo", "bar"])
+foo(["foo", 1])  # expect-type-error
+"""

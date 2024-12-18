@@ -9,3 +9,12 @@ from typing import Dict
 
 def foo(x: Dict[str, str]) -> Dict[str, str]:
     return x
+
+
+"""
+RESULT
+
+
+foo({"foo": "bar"})
+foo({"foo": 1})  # expect-type-error
+"""

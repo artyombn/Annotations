@@ -9,3 +9,12 @@ from typing import Union
 
 def foo(**kwargs: Union[int, str]):
     return kwargs
+
+
+"""
+RESULT
+
+
+foo(a=1, b="2")
+foo(a=[1])  # expect-type-error
+"""
