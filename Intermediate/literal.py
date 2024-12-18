@@ -8,3 +8,14 @@ from typing import Literal
 def foo(direction: Literal["left", "right"]):
     ...
 
+
+"""
+RESULT
+
+
+foo("left")
+foo("right")
+
+a = "".join(["l", "e", "f", "t"])
+foo(a)  # expect-type-error
+"""

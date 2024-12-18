@@ -19,3 +19,19 @@ class Person(TypedDict, total=False):
     address: str
     email: str
 
+
+"""
+RESULT
+
+
+a: Person = {
+    "name": "Capy",
+    "age": 1,
+    "gender": "Male",
+    "address": "earth",
+    "email": "capy@bara.com",
+}
+a: Person = {"name": "Capy"}
+# fmt: off
+a: Person = {"age": 1, "gender": "Male", "address": "", "email": ""} # expect-type-error
+"""
